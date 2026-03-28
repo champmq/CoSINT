@@ -11,7 +11,7 @@ Markdown reports and JSON case sidecars with structured evidence records.
 
 **Docs & guides:** [Wiki](https://github.com/champmq/cosint/wiki)
 
----
+
 
 ## Quick Start
 
@@ -37,7 +37,7 @@ and installing optional packages. You can re-run it at any time without overwrit
 If you prefer to configure manually, copy `.env.example` to `.env` and fill in the keys you need. Missing keys only
 disable the specific tools that require them, everything else keeps working.
 
----
+
 
 ## Model setup
 
@@ -54,7 +54,7 @@ GEMINI_API_KEY=...
 AZURE_API_KEY=...
 ```
 
----
+
 
 ## CLI
 
@@ -63,7 +63,7 @@ python cosint.py <target> [options]
 ```
 
 | Option                                     | Description                                                                                                 |
-|--------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+|--|-|
 | `--depth quick\|deep`                      | Scan depth (default: `quick`)                                                                               |
 | `--type <type>`                            | Override target type (`email`, `ip`, `domain`, `username`, `phone`, `person`, `company`, `crypto`, `media`) |
 | `--targets <ids>`                          | Additional identifiers for the same subject                                                                 |
@@ -80,7 +80,7 @@ python cosint.py <target> [options]
 
 Reports are written to `reports/` as a Markdown file and a `.case.json` sidecar after each scan.
 
----
+
 
 ## MCP server
 
@@ -93,7 +93,7 @@ python server.py
 
 See [`wiki/MCP-Server.md`](./wiki/MCP-Server.md) for client integration instructions.
 
----
+
 
 ## Testing
 
@@ -105,14 +105,14 @@ python -m unittest tests.test_smoke_all_modules -v
 python -m pytest -q
 ```
 
----
+
 
 ## Legal Notice
 
 Use this software only for lawful, authorised OSINT work. You are solely responsible for compliance with applicable law,
 platform terms of service, and API provider policies.
 
----
+
 
 ## License
 
