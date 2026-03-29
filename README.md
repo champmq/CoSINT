@@ -2,8 +2,8 @@
 
 AI-assisted OSINT Investigator (beta release).
 
-Coordinates a root agent with specialist subagents and MCP-hosted tools to investigate a target. Output is saved as
-Markdown reports and JSON case with structured evidence records.
+Verify hypotheses about an entity, run a full profile scan or find a correlation between two entites and more.
+Supports scans and pivots on email, domain, media, IP, username, phone, person and wallet.
 
 > **Note:** This is a personal hobby project, it's a work in progress and rough around the edges (there is a lot to
 > clean up atm). If you notice anything
