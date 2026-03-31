@@ -5,8 +5,7 @@ AI-assisted OSINT Investigator (beta release).
 Verify hypotheses about an entity, run a full profile scan or find a correlation between two entites and more.
 Supports scans and pivots on email, domain, media, IP, username, phone, person and wallet.
 
-> **Note:** This is a personal hobby project, it's a work in progress and rough around the edges (there is a lot to
-> clean up atm). If you notice anything
+> **Note:** This is a personal hobby project, it's a bit rough around the edges (there is a lot that can be improved). If you notice anything
 > flawed or have suggestions, please open an issue or submit a PR!
 
 **Docs & guides:** [Wiki](https://github.com/champmq/cosint/wiki)
