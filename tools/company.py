@@ -11,10 +11,11 @@ from pydantic import Field
 from shared import config
 from shared.http_client import get, OsintRequestError
 from shared.rate_limiter import rate_limit
+from shared.url_utils import extract_domain
 
 
 def register(mcp: FastMCP) -> None:
-    if config._get_env("OPENCORPORATES_KEY") or config._get_env("NORTHDATA_KEY"):
+    if config.OPENCORPORATES_KEY or config.NORTHDATA_KEY:
 
         @mcp.tool(annotations={"readOnlyHint": True})
         async def osint_company_registry_lookup(
@@ -109,13 +110,7 @@ def register(mcp: FastMCP) -> None:
             Requires: HUNTER_API_KEY in .env
             """
 
-            domain = (
-                domain.strip()
-                .lower()
-                .removeprefix("http://")
-                .removeprefix("https://")
-                .split("/")[0]
-            )
+            domain = extract_domain(domain)
             try:
                 await rate_limit("hunter")
                 data = await get(
